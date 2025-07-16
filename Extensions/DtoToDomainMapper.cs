@@ -5,7 +5,7 @@ namespace EmployeeDirectory.Extensions
 {
     public static class DtoToDomainMapper
     {
-        public static Employee CreateResponse(this CreateEmployeeDto employeeDto)
+        public static Employee ToEmployeeDto(this CreateEmployeeDto employeeDto)
         {
             return new Employee
             {
@@ -17,7 +17,7 @@ namespace EmployeeDirectory.Extensions
             };
         }
 
-        public static Employee UpdateResponse(this UpdateEmployeeDto employeeDto)
+        public static Employee ToEmployeeDto(this UpdateEmployeeDto employeeDto)
         {
             return new Employee
             {
